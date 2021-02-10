@@ -1,0 +1,22 @@
+#######################################
+# Syntax Coloring Map For Blink
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+ESPs	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+espSetup	KEYWORD2
+espAnalogWrite	KEYWORD2
+espAnalogWrite_DimLED	KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+ 
