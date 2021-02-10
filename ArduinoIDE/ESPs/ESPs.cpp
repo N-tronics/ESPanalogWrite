@@ -4,22 +4,24 @@ Created by Nischay Bharadwaj
 Private library
 */
 
-#include "esp.h"
+#include "ESPs.h"
 #include "Arduino.h"
+
+ESPs::ESPs (){}
 
 int res;
 
-void espDACSetup(int gpio, int chan, int resol, int freq) {
+void ESPs::espSetup(int gpio, int chan, int resol, int freq) {
 	res = pow(2, resol);
 	ledcSetup(chan, freq, resol);
 	ledcAttachPin(gpio, chan);
 }
 
-void espAnalogWrite(int chan, int duty) {
+void ESPs::espAnalogWrite(int chan, int duty) {
 	ledcWrite(chan, duty);
 }
 
-void espAnalogWrite_DimLED(int chan, int del) {
+void ESPs::espAnalogWrite_DimLED(int chan, int del) {
 	for (int i = 0; i < res; ++i) {
 		espAnalogWrite(chan, i);
 		Serial.println(i);
@@ -31,5 +33,5 @@ void espAnalogWrite_DimLED(int chan, int del) {
 		Serial.println(i);
 		delay(del);
 	}
-	delay(100);		
+	delay(100);
 }
