@@ -24,13 +24,11 @@ void ESPs::espAnalogWrite(int chan, int duty) {
 void ESPs::espAnalogWrite_DimLED(int chan, int del) {
 	for (int i = 0; i < res; ++i) {
 		espAnalogWrite(chan, i);
-		Serial.println(i);
 		delay(del);
 	}
 	delay(100);
 	for (int i = res - 1; i > 0; --i) {
 		espAnalogWrite(chan, i);
-		Serial.println(i);
 		delay(del);
 	}
 	delay(100);
