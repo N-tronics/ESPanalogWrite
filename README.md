@@ -1,4 +1,4 @@
-# ESPanalogWrite
+# ESPs
 This library provides the analogWrite() function of AVR boards to ESP boards as espAnalogWrite().
 
 Steps for library installation in ArduinoIDE:
