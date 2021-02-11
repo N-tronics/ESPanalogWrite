@@ -27,3 +27,5 @@ Commands availble:
     This matches the AVR analogWrite() function, but this is more powerful.
 3  obj.espAnalogWrite_DimLED(int channel, int delay(default is 10 ms);
     This function dims an LED connected to the GPIO pin specified above. The delay is for the time in between each duty value. 
+
+Note: In PIO, you have an option to use the functions by themselves or as methods. But in ArduinoIDE, you have to use them as methods.
