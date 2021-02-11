@@ -10,6 +10,7 @@ Steps for library installation in ArduinoIDE:
 6. Go to Sketch>Include Library
 7. Scroll down and under 'User Contributed', you should see 'ESPs'.
 8. Click to add it to your sketch
+9. Once added, you should also get the included example in 'File>Examples>Scroll Down to find ESPs
 
 Steps for library installation in PlatformIO:
 1. Download the zip library and open it
